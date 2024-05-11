@@ -1,22 +1,24 @@
-import React from 'react';
-import Random from './components/Random';
-import Tag from './components/Tag';
-import './App.css';
+import React from "react";
+import Random from "./components/Random";
+import Tag from "./components/Tag";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      <div>
-         <h1>
-          Gif Generator
-         </h1>
-      </div>
+    <div className="bg-gray-200 min-h-screen">
+      <div className="container mx-auto px-4 py-8">
+        <Navbar />
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col w-[50%] items-center justify-center">
+            <Random />
+            <Tag />
+          </div>
+        </div>
 
-      <div>
-        <Random />
-        <Tag />
+        <Footer />
       </div>
-    </>
+    </div>
   );
 }
 
