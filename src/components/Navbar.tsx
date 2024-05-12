@@ -3,15 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between items-center mb-8">
-        {/* Logo */}
-        <img src="" alt="Logo" className="h-8 w-auto" />
-
-        {/* Heading */}
-        <h1 className="text-3xl text-black font-bold">GIF Generator</h1>
-
-        {/* Buttons */}
-        <div className="flex items-center">
+      <nav className="flex justify-between items-center  bg-white px-10 py-3 border-b-2 border-gray-300">
+        <h1 className="text-xl text-black tracking-wider font-bold cursor-pointer">GIF Generator</h1>
+        <div className="flex items-center text-lg tracking-wider gap-x-6">
           <a
             href="https://github.com/AryanBiswas198"
             className="text-gray-700 hover:text-black mr-4"
