@@ -3,11 +3,11 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between items-center  bg-white px-10 py-3 border-b-2 border-gray-300">
+      <nav className="flex flex-col sm:flex-row justify-between items-center bg-white px-4 sm:px-10 py-3 border-b-2 border-gray-300">
         <h1 className="text-xl text-black tracking-wider font-bold cursor-pointer">
           GIF Generator
         </h1>
-        <div className="flex items-center text-lg tracking-wider gap-x-6">
+        <div className="flex items-center text-lg tracking-wider gap-x-6 mt-4 sm:mt-0">
           <div className="group relative">
             <a href="https://github.com/AryanBiswas198">
               <svg
@@ -33,8 +33,10 @@ const Navbar = () => {
             </span>
           </div>
 
-          <a href="https://drive.google.com/file/d/17ZFIwP5JafRdSx9NX_EDXtTCQ1d2kwc_/view?usp=sharing"
-          className="cursor-pointer group relative flex gap-1.5 px-8 bg-white bg-opacity-80 text-black hover:bg-opacity-70 transition font-semibold">
+          <a
+            href="https://drive.google.com/file/d/17ZFIwP5JafRdSx9NX_EDXtTCQ1d2kwc_/view?usp=sharing"
+            className="cursor-pointer group relative flex gap-1.5 px-2 sm:px-8 bg-white bg-opacity-80 text-black hover:bg-opacity-70 transition font-semibold"
+          >
             <svg
               className="bg-black rounded-xl"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,7 @@ const Navbar = () => {
                 </g>{" "}
               </g>
             </svg>
-            Download
+            Considering to give me a chance?
             <div
               className="absolute top-10 left-[50%] -translate-x-[50%] 
               z-20 origin-left scale-0 px-3 rounded-lg border 
