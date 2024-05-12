@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
+// const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 const API_KEY2 = process.env.REACT_APP_GIPHY_API_KEY2;
 
 interface GifData {
